@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+client/.next/
+client/out/
+
+# Environment variables
+.env
+.env.local
+server/.env
+
+# Logs
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
