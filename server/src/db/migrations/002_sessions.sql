@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS mood_sessions (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  mood VARCHAR(100) NOT NULL,
+  config JSONB NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
